@@ -16,6 +16,6 @@ source $VENV_NAME/bin/activate
 
 pip install PyQt5
 
-python your_script.py
+python PeopleAndPlaces.py
 
 deactivate
