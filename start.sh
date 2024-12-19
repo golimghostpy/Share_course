@@ -17,5 +17,3 @@ source $VENV_NAME/bin/activate
 pip install PyQt5
 
 python PeopleAndPlaces.py
-
-deactivate
