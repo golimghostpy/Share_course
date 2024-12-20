@@ -502,7 +502,7 @@ class ContactsWindow(QWidget): # окно контактов
             index = self.list_widget.row(item)
             self.list_widget.takeItem(index)
 
-            request = f'remove_contact {current_login} {contacts[index]['phone']}' # удаляем контакт
+            request = f"remove_contact {current_login} {contacts[index]['phone']}" # удаляем контакт
             send_to_server(request)
 
             del contacts[index]
@@ -515,7 +515,7 @@ class ContactsWindow(QWidget): # окно контактов
         if dialog.exec_():
             updated_contact = dialog.get_contact()
             if updated_contact:
-                request = f'change_contact {current_login} {contacts[index]['phone']} '
+                request = f"change_contact {current_login} {contacts[index]['phone']} "
                 contacts[index] = updated_contact
                 for i in updated_contact.values():
                     request += i + ' '
