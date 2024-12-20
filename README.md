@@ -13,3 +13,10 @@
    chmod +x start.sh
    ./start.sh
 ```
+
+Если при запуске скрипта возникает ошибка, то необходимо установить вручную:
+```sh
+   sudo apt install python3
+   sudo apt install python3-pyqt5
+   python3 PeopleAndPlaces.py
+```
