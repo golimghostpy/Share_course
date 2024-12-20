@@ -16,4 +16,10 @@ source $VENV_NAME/bin/activate
 
 pip install PyQt5
 
-python PeopleAndPlaces.py
+# Проверка установки PyQt5
+if ! pip show PyQt5 &> /dev/null; then
+    echo "PyQt5 не установлен. Попробуйте установить его через системный пакетный менеджер."
+    sudo apt-get install python3-pyqt5
+else
+    python PeopleAndPlaces.py
+fi
